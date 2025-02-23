@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    padding: 40px 0px;
+    gap: 32px;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 1160px;
+    margin: auto;
+
+}
+.container__item{
+    height: 380px;
+    width: 200px;
+    box-shadow: 0px 2px 4px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 20px; */
+    padding: 20px;
+    align-items: center;
+    position: relative;
+}
+.cart-bar{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 40px;
+    width: 40px;
+    padding: 0 20px;
+    background-color: rgb(0, 161, 0);
+    border-radius: 45%;
+    cursor: pointer;
+    transition: 150ms;
+    border: none;
+}
+
+.cart-bar.red{
+    background-color: rgb(220, 0, 0);
+}
+.cart-bar.red:hover{
+    background-color: rgb(161, 0, 0);
+}
+.container__item:hover .cart-bar{
+    opacity: 1;
+}
+.cart-bar:hover{
+    background-color: rgb(0, 136, 0);
+    color: #fff;
+}
+.container__item img{
+    width: 150px;
+    height: 150px;
+}
+header{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 30px;
+    align-items: center;
+}
+header nav{
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+}
+header a{
+    color: white;
+}
+header a i {
+    margin-left: 8px;
+}
+.search{
+    width: 80vw;
+    margin: 20px auto;
+}
+.search__input{
+    height: 40px;
+    width: 80%;
+}
+.search button{
+    height: 40px;
+    width: 20%;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 150ms;
+}
+.search button:hover{
+    background-color: rgb(0, 0, 161);
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+.back, .go{
+    padding: 20px 30px;
+    transition: 150ms;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.go{
+    background-color: blue;
+    color: white;
+}
+.go:hover{
+    background-color: rgb(0, 0, 161);
+}
+.back:hover{
+    background-color: #999;
+}
